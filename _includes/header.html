@@ -2,8 +2,12 @@
 	<div class="container">
 		<h1 class="logo">
 			<a title="{{ site.author }}" href="{{ site.baseurl | append: "/" }}">{{ site.author }}</a>
-			{% if page.project.showsencondindex  %}
-			/<a title="{{ page.project.belongto }}" href="../" style="text-transform: uppercase">{{ page.project.belongto }}</a>
+			{% if page.category == "second-index"  %}
+			/ <a title="{{ page.type }}" href="./" style="text-transform: uppercase">{{ page.type }}</a>
+			{% endif %}
+			{% if page.category == "projects"  %}
+			/ <a title="{{ page.project.belongto }}" href="../" style="text-transform: uppercase">{{ page.project.belongto }}</a>
+			/ <a title="{{ page.project.title }}" href="./" style="text-transform: uppercase">{{ page.project.title }}</a>
 			{% endif %}
 		</h1>
 	</div>
