@@ -13,19 +13,23 @@
 		<section class="project">
 			<div class="container">
 				<article>
-					<span class="h2">Project Title</span>
-					<h1>
-						<a href="{{ page.project.url }}" target="_blank" title="{{ page.project.title }}" rel="nofollow">{{ page.project.title }}</a>
-					</h1>
-					<span class="h2">Role</span>
-					{{ page.content }}
+					<span class="h2">ITEM NO</span>
+					<h1>{{ page.project.title }}</h1>
 					<div class="project-meta">
-						<span class="h2">Technologies</span>
-						<p>{{ page.project.tech }}</p>
-						<span class="h2">Agency</span>
-						<p><a title="{{ page.agency.title }}" href="{{ page.agency.url }}" target="_blank" rel="nofollow">{{ page.agency.title }}</a></p>
-						<span class="h2">Year</span>
-						<p>{{ page.agency.year }}</p>
+						<span class="h2">Dimensions</span>
+						<p>{{ page.project.dimensions }}</p>
+						<span class="h2">electrical</span>
+						<p>{{ page.project.electrical }}</p>
+						<span class="h2">Power</span>
+						<p>{{ page.project.power }}</p>
+						<span class="h2">Material</span>
+						<p>{{ page.project.material }}</p>
+						<span class="h2">Shade</span>
+						<p>{{ page.project.shade }}</p>
+						<span class="h2">Color</span>
+						<p>{{ page.remark.color }}</p>
+						<span class="h2">IP RATE</span>
+						<p>{{ page.remark.ip }}</p>
 					</div>
 				</article>
 				<aside>
@@ -40,6 +44,13 @@
 			</div>
 		</section>
 		<section class="project-navigation">
+			<div class="container">
+				{% if page.project.showsencondindex  %}
+				<a title="{{ page.project.belongto }}" href="../" class="prev"><span class="h2"><h2>BACK TO LIST</h2></span></a>
+				{% endif %}
+			</div>
+		</section>
+		<section class="project-navigation" hidden>
 			<div class="container">
 				{% if page.previous and page.previous.categories contains "projects" %}
 				<a title="Previous {{ page.previous.project.title }}" href="{{ page.previous.url | prepend: site.baseurl }}" class="prev">

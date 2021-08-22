@@ -98,6 +98,14 @@
 					opacity: .45;
 				}
 			}
+			.img-wrapper-detail {
+				&:before {
+					opacity: 1;
+				}
+				&:after {
+					opacity: .45;
+				}
+			}
 		}
 	}
 
@@ -105,7 +113,44 @@
 		position: relative;
 
 		&:before {
-			content: "View Project";
+			content: "View More";
+			color: $color-white;
+			@extend .h2;
+			font-weight: 800;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			margin-top: -.5rem;
+			margin-left: -4.4rem;
+			opacity: 0;
+			-webkit-transition: all .5s ease-in-out;
+    		transition: all .5s ease-in-out;
+    		-webkit-transition-delay: .25s;
+    		transition-delay: .25s;
+    		z-index: 2;
+		}
+
+		&:after {
+			background: #000;
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			opacity: 0;
+			-webkit-transition: all .5s ease-in-out;
+    		transition: all .5s ease-in-out;
+    		z-index: 1;
+		}
+	}
+
+	.img-wrapper-detail {
+		position: relative;
+
+		&:before {
+			content: "View Detail";
 			color: $color-white;
 			@extend .h2;
 			font-weight: 800;
@@ -166,6 +211,7 @@
 
 	.container {
 		max-width: 100%;
+		max-width: 70em;
 	}
 
 	article {
@@ -231,11 +277,10 @@
 }
 
 .project-navigation {
-	background: $color-black;
 	padding: 5rem 0;
 
 	a {
-		color: $color-white;
+		color: $color-black;
 		display: inline-block;
 
 		&:hover {
@@ -359,7 +404,7 @@
 	@media (min-width: $breakpoint-medium) {
 		float: left;
 		margin-bottom: 0;
-		width: 33.33333%;
+		width: 66.666666%;
 	}
 }
 

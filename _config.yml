@@ -1,15 +1,17 @@
 # User config
-author: "Pineapple"
-tagline: "Pineapple Certfied Jekyll Theme"
-description: "In 1493, explorer Christopher Columbus found pineapples on Guadeloupe Island in the Caribbean. Pineapple on pizza soon followed..."
-keywords: "Pineapple, Pineapple Pizza, Pineapple House"
-email: "pineapple@example.com"
+author: "VANNEY LIGHTING"
+tagline: ""
+description: "We have focus on lighting for more than ten years. Good products are provided to customers all over the world."
+keywords: "lighting"
+email: "justin@vaneey.com | kenlisten@vaneey.com"
+phone: "0086-(0)760-87683570"
+address: "14 Qingfeng Road, Henglan, Zhongshan, Guangdong 528400, China"
 linkedin: "https://www.linkedin.com/"
 twitter: "https://twitter.com/"
 github: "https://github.com/"
 
 # Site config
-baseurl: "/pineapple"
+baseurl: "/vaneey"
 highlighter: rouge
 sass:
   sass_dir: assets/scss

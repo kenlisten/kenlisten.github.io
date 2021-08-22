@@ -1,5 +1,3 @@
----
----
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -14,26 +12,22 @@
 	<main class="content">
 		<section class="projects">
 			<div class="container">
-				<h2>Products we provided.</h2>
+				<h2>{{page.type}} Lamps we provided</h2>
 				<ul class="projects-list">
-					{% for item in site.categories.second-index reversed %}
+					{% for item in site.categories.projects reversed %}
+					{% if item.project.belongto contains page.type %}
 						<li>
 							<a href="{{ item.url | prepend: site.baseurl }}">
-								<div class="img-wrapper">
-									<img src="{{ item.second-index.logo | prepend: site.baseurl }}" alt="{{ item.second-index.title }}" />
+								<div class="img-wrapper-detail">
+									<img src="{{ item.project.logo | prepend: site.baseurl }}" alt="{{ item.project.title }}" />
 								</div>
-								<span class="h2">{{ item.second-index.type }}</span>
-								<h3>{{ item.second-index.title }}</h3>
+								<span class="h2">{{ item.project.type }}</span>
+								<h3>{{ item.project.title }}</h3>
 							</a>
 						</li>
+					{% endif %}
 					{% endfor %}
 				</ul>
-			</div>
-		</section>
-		<section class="intro">
-			<div class="container">
-				<h2>About us</h2>
-				<p>{{ site.description }}</p>
 			</div>
 		</section>
 	</main>
