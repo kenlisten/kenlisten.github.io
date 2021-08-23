@@ -24,12 +24,6 @@
 						<p>{{ page.project.power }}</p>
 						<span class="h2">Material</span>
 						<p>{{ page.project.material }}</p>
-						<span class="h2">Shade</span>
-						<p>{{ page.project.shade }}</p>
-						<span class="h2">Color</span>
-						<p>{{ page.remark.color }}</p>
-						<span class="h2">IP RATE</span>
-						<p>{{ page.remark.ip }}</p>
 					</div>
 				</article>
 				<aside>
@@ -67,6 +61,7 @@
 			</div>
 		</section>
 	</main>
+	{% include footer.html %}
 	<script src="{{ "/assets/scripts/vendor/jquery-1.12.4.min.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/assets/scripts/vendor/scrollreveal.min.js" | prepend: site.baseurl }}"></script>
 	<script src="{{ "/assets/scripts/vendor/sticky-kit.min.js" | prepend: site.baseurl }}"></script>
