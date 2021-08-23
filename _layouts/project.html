@@ -24,8 +24,10 @@
 						<p>{{ page.project.power }}</p>
 						<span class="h2">Material</span>
 						<p>{{ page.project.material }}</p>
+						{% if page.project.shade != ""  %}
 						<span class="h2">Shade</span>
 						<p>{{ page.project.shade }}</p>
+						{% endif %}
 						<span class="h2">Color</span>
 						<p>{{ page.remark.color }}</p>
 						<span class="h2">IP RATE</span>
