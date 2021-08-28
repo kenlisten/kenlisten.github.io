@@ -2,13 +2,13 @@
 layout: second-index
 permalink: /:title/
 category: second-index
-type: ceiling
+type: new arrive
 
 meta:
   keywords: "Vaneey, Ceiling"
 
 second-index:
-  title: "Ceiling Lamp"
+  title: "New arrive"
   type: "Vaneey Design"
   url: "https://github.com/arnolds/pineapple"
   logo: "/assets/images/family/ceiling.jpg"
