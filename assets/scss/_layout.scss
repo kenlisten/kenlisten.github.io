@@ -215,7 +215,7 @@
 	}
 
 	article {
-		//margin-bottom: 3rem;
+		margin-bottom: 3rem;
 
 		@media (min-width: $breakpoint-medium) {
 			float: right;
@@ -223,10 +223,6 @@
 			width: 40%;
 			position: absolute;
 			right: 5%;
-		}
-		
-		img {
-			width: 50%;
 		}
 	}
 
