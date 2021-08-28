@@ -18,7 +18,8 @@
 					<div class="project-meta">
 						<span class="h2">Dimensions</span>
 						<p>{{ page.project.dimensions }}</p>
-						<span class="h2">electrical</span>
+						<!-- <span class="h2">electrical</span> -->
+						<p><img src="{{ page.project.drawing | prepend: site.baseurl }}" alt="" /></p>
 						<p>{{ page.project.electrical }}</p>
 						<span class="h2">Power</span>
 						<p>{{ page.project.power }}</p>
@@ -34,8 +35,8 @@
 						<span class="h2">IP RATE</span>
 						<p>{{ page.remark.ip }}</p>
 						{% endif %}
-						<span class="h2">Drawing</span>
-						<p><img src="{{ page.project.drawing | prepend: site.baseurl }}" alt="" /></p>
+						<!-- <span class="h2">Drawing</span> -->
+						<!-- <p><img src="{{ page.project.drawing | prepend: site.baseurl }}" alt="" /></p> -->
 					</div>
 				</article>
 				<aside>
