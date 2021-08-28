@@ -45,6 +45,11 @@
 							<img src="{{ image.url | prepend: site.baseurl }}" alt="{{ image.alt }}" />
 						</li>
 						{% endfor %}
+						{% for draw in page.drawings %}
+						<li>
+							<img class="drawing" src="{{ draw.url | prepend: site.baseurl }}" alt="{{ draw.alt }}" />
+						</li>
+						{% endfor %}
 					</ul>
 				</aside>
 			</div>
