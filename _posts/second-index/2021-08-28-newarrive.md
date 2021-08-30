@@ -8,7 +8,7 @@ meta:
   keywords: "Vaneey, New Arrivals"
 
 second-index:
-  title: "newarrivals"
+  title: "newarrive"
   type: "Vaneey Design"
   url: "https://github.com/arnolds/pineapple"
   logo: "/assets/images/family/new.jpg"
