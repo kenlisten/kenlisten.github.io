@@ -2,16 +2,16 @@
 layout: second-index
 permalink: /:title/
 category: second-index
-type: new arrive
+type: new arrivals
 
 meta:
-  keywords: "Vaneey, Ceiling"
+  keywords: "Vaneey, new arrivals"
 
 second-index:
-  title: "New arrive"
+  title: "New arrivals"
   type: "Vaneey Design"
   url: "https://github.com/arnolds/pineapple"
-  logo: "/assets/images/family/ceiling.jpg"
+  logo: "/assets/images/family/new.jpg"
   tech: "HTML, CSS, Boostrap, Sass, JavaScript, jQuery, Jekyll"
 
 agency:
@@ -21,7 +21,7 @@ agency:
 
 images:
   - image:
-    url: "/assets/images/family/ceiling.jpg"
-    alt: "ceiling"
+    url: "/assets/images/family/new.jpg"
+    alt: "new"
 
 ---
