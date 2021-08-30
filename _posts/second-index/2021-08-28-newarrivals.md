@@ -2,13 +2,13 @@
 layout: second-index
 permalink: /:title/
 category: second-index
-type: new arrivals
+type: New Arrivals
 
 meta:
-  keywords: "Vaneey, new arrivals"
+  keywords: "Vaneey, New Arrivals"
 
 second-index:
-  title: "New arrivals"
+  title: "newarrivals"
   type: "Vaneey Design"
   url: "https://github.com/arnolds/pineapple"
   logo: "/assets/images/family/new.jpg"
