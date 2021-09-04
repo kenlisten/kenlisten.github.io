@@ -13,7 +13,7 @@ project:
   type: "E27 + LED"
   url: "https://github.com/arnolds/pineapple"
   logo: "/assets/images/projects/wall/VA1166-1W.jpg"
-  dimensions: ""
+  dimensions: "320x160x215MM | 305x160x215MM"
   power: "E27 MAX 60W | E27 MAX 60W + LED 3W"
   material: "Aluminum + Iron"
   shade: "White Fabric"
@@ -22,14 +22,19 @@ project:
   showsencondindex : true
 
 remark:
-  color: "Chrome"
+  color: "Chrome | White"
   ip: "20"
 
 images:
   - image:
-    url: "/assets/images/projects/wall/VA1166-2W.jpg"
-    alt: "VA1166-2W"
-  - image:
     url: "/assets/images/projects/wall/VA1166-1W.jpg"
     alt: "VA1166-1W"
+  - image:
+    url: "/assets/images/projects/wall/VA1166-2W.jpg"
+    alt: "VA1166-2W"
+    
+drawings:
+  - image:
+    url: "/assets/images/projects/wall/drawing/VA1166-1W.png"
+    alt: "VA1166-1W-draw"
 ---
