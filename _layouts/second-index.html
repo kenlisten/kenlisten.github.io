@@ -12,7 +12,11 @@
 	<main class="content">
 		<section class="projects">
 			<div class="container">
-				<h2>{{page.type}} Lamps we provided</h2>
+				{% if page.type == "New Arrivals" %}
+					<h2>{{page.type}}</h2>
+				{% else %}
+					<h2>{{page.type}} Lamps we provided</h2>
+				{% endif %}
 				<ul class="projects-list">
 					{% if page.type == "New Arrivals" %}
 						{% for item in site.categories.projects reversed %}
